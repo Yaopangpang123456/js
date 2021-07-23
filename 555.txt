@@ -1,0 +1,19 @@
+window.onload = function () {
+    function $(id) {
+        return document.getElementById(id)
+    }
+    $("dx").onclick = function () {
+        var in1 = parseFloat($("in1").value)
+        var in2 = parseFloat($("in2").value)
+        var in3 = parseFloat($("in3").value)
+        if (in1>in2){
+            max=in1
+        }else if (in3>in2){
+            max=in3
+        }else {
+            max=in2
+        }
+        $("span").innerHTML = max
+    }
+
+}
